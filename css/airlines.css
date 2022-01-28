@@ -1,0 +1,764 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.ad{
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+}
+
+
+.ad .ad1 h1{
+    font-size: 4rem;
+    display: inline-block;
+    /* margin-left: 10rem; */
+}
+
+.ad .ad2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around ;
+}
+.ad .ad2 p{
+    font-size: 1rem;
+    display: inline-block;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+.ad .ad2 p span{
+    color: dodgerblue;
+    font-weight: bolder;
+}
+
+.ad .ad2 .app{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.ad .ad2 .app img{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+
+}
+
+.ad .ad2 .app button{
+    margin: 8px;
+    width: 6rem;
+    padding: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 15px;
+    background-color: #fe0;
+    color: dodgerblue;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ad .ad2 .app button:hover{
+    background-color: rgb(30, 144, 255);
+    color: #fe0;
+}
+.ad img{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    /* position: absolute; */
+    
+    
+}
+
+
+nav#navbar{
+    width: 100vw;
+    background-color: #fff;
+    /* border:none; */
+    /* border: 2px solid #fe0; */
+    background-color: dodgerblue;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* box-shadow: 0 0.5px 10px 0.5px #333; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0.5px 10px 0.5px #333;
+    /* margin-bottom: 60%; */
+    /* border: none; */
+}
+
+#menu_toggle{
+    font-size: 1.2rem;
+    color: white;
+    position: relative; 
+    /* margin-top: 7px; */
+    line-height: 64px;
+    margin-right: 20px;
+    float: right;
+    display: none;
+    cursor: pointer;
+    
+}
+  
+nav .logo{
+    font-size: 2rem;
+    font-family: 'Pushster', cursive;
+    font-weight: bolder;
+    
+
+}
+
+#navbar .logo .Prakash{
+    color: yellow;
+    font-size: 2rem;
+    font-family: 'Pushster', cursive;
+}
+
+#navbar .logo .Airlines{
+    color: white;
+    font-family: 'Licorice', cursive; 
+    /* font-weight: bolder; */
+    font-size: 2rem;
+}
+
+nav .elements ul.main_tab{
+    list-style: none;
+    /* width: 100vw; */
+    margin: 15px 5px;
+    margin-left: 10rem;
+    line-height: 8vh;
+
+}
+
+nav .elements ul.main_tab li{
+    display: inline-block;
+    margin: 0px 7px;
+    align-items: center;
+    /* background-color: red; */
+}
+
+nav .elements ul.main_tab li a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    padding: 7px 20px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid dodgerblue;
+    transition: 0.2s ease;
+}
+
+nav .elements ul.main_tab li a.active, ul.main_tab li a:hover{
+   color: yellow;
+   border: 2px solid yellow;
+}
+
+ul.secondary_tab{
+    position: absolute;
+    right: 10%;
+    display: inline-block;
+    display: none;
+}
+ul.secondary_tab li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul.secondary_tab li button{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #695cfe;
+    padding: 6px 9px;
+    margin-right: 10px;
+    /* font-weight: bold; */
+    color: #695cfe;
+}
+
+ul.secondary_tab li button.signup a{
+    text-decoration: none;
+    font-family: 'ubuntu';
+    font-size: 1.2rem;
+    color: #695cfe;
+}
+ul.secondary_tab li button.login{
+    background-color: #695cfe;
+    border-radius: 3px;
+    border: 2px solid #695cfe;
+    padding-left: 4px 6px;
+    
+}
+
+ul.secondary_tab li button.login a{
+    text-decoration: none;
+    font-family: 'ubuntu';
+    font-size: 1.2rem;
+    color: white;
+}
+
+ul.secondary_tab li button.signup:hover{
+    background-color: #695cfe;
+    transition: 0.2s ease;
+}
+
+ul.secondary_tab li button.signup:hover a{
+    color: white;
+}
+
+ul.secondary_tab li button.login:hover{
+    background-color: #56328c;
+    border: 2px solid #56328c;
+    transition: 0.2s ease;
+}
+.lower-nav ul.main_tab .partners{
+    display: inline-block;
+    position: absolute;
+    line-height: 100%;
+    /* margin-right: 10px; */
+    /* margin-left: 8px; */
+    margin-top: -4.5px;
+    /* height: 40px; */
+    /* width: 10%; */
+    /* transition: 1s eas e; */
+
+}
+
+.lower-nav ul.main_tab .partners .payment{
+    /* background-color: hsl(158, 95%, 34%); */
+    background-color: yellow;
+    border: none;
+    height: 100%;
+    color: black;
+    padding: 5px 9px;
+    /* width: 100%; */
+    font-size: 1rem;
+    /* border-radius: 4px; */
+    cursor: pointer;
+
+}
+.lower-nav ul.main_tab .partners .partners-content {
+    /* display: block; */
+    position: relative;
+    background-color: white;
+     
+}
+
+.lower-nav ul.main_tab .partners .partners-content li{
+    margin: 0px;
+    padding: 4px 7px;
+    padding-top: 6px;
+    font-family: Arial, Helvetica, sans-serif ;
+    display: block;
+    /* background-color: red; */
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+.lower-nav ul.main_tab .partners .partners-content li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 9px;
+    transition: 0.4s ease;
+}
+
+.lower-nav ul.main_tab .partners .partners-content li:nth-child(1){
+    color: #56328c;
+}
+
+.lower-nav ul.main_tab .partners .partners-content li:nth-child(2){
+    color: red;
+}
+
+.lower-nav ul.main_tab .partners .partners-content li:nth-child(3){
+    color: #1111ee;
+}
+
+.lower-nav ul.main_tab .partners .payment:hover{
+    background-color: #ddd000;
+}
+
+.lower-nav ul.main_tab .partners:hover li{
+    display: block;
+}
+
+.lower-nav{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100vw;
+    border-bottom: 2px solid yellow;
+    height: 6vh;
+}
+
+
+
+.lower-nav ul li{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.lower-nav ul li a{
+    font-size: 1rem;
+    padding: 4px 8px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 10px;
+    color: black;
+}
+
+.lower-nav ul li a:hover{
+    color: dodgerblue;
+}
+
+.lower-nav ul li.signIn{
+    position: absolute;
+    right: 30px;
+    margin-top: -4.8px;
+
+    /* line-height: 6vh; */
+    
+    
+}
+
+li .signIn_btn button{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: 'Ubuntu';
+    background-color: #695cfe;
+    border: 2px solid #695cfe;
+    cursor: pointer;
+}
+
+div.dropdown_btn{
+    padding: 5px;
+    background-color: #695cfe;
+    border-radius: 3px;
+    display: none;
+}
+
+div.dropdown_btn button{
+    color: white;
+    font-size: 1.25rem;
+    background-color: #695cfe;
+    border: none;
+    display: flex;
+}
+
+li .signIn_btn button.signup{
+    background-color: transparent;
+    border: 2px solid #695cfe;
+}
+
+li .signIn_btn button a{
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+li.signIn .signIn_btn button.signup a{
+    color: #695cfe;
+}
+
+li.signIn button.signup:hover, li.signIn button.signup:hover a{
+    background-color: #695cfe;
+    color: white;
+    transition: 0.2s ease;
+
+}
+
+li.signIn button.login:hover{
+    background-color: #594ddf;
+    border: 2px solid #594ddf;
+    transition: 0.2s ease;
+}
+
+
+
+.bodysec{
+    /* height: 108vh; */
+    width: 100vw;
+    overflow-y: hidden;
+    
+    
+}
+
+.bodypart{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.bodysec .quote h1{
+    font-size: 4rem;
+    margin-top: 40%;
+    font-family: 'Merriweather', serif;
+    color: dodgerblue;
+    
+}
+
+.bodysec .quote h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: #e5aa1d;
+    /* background-color: black; */
+}
+
+.bodysec .hrow{
+    display:none;
+    background-color: black;
+    width: 90vw;
+    height: 1px;
+    margin-top: 5%;
+}
+
+
+
+.form{
+    margin-top: 15%;
+    /* margin-left: 14%;  */
+    /* height: 60px; */
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    flex-flow: row wrap;
+}
+
+.form1{
+    margin-right: 60px;
+}
+.form h3{
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.form input{
+    width: 100%;
+    margin: 10px 0px 18px 0px;
+    border: none;
+    height: 25px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    
+}
+
+.form input:focus{
+    outline: none;
+    box-shadow: 1px 1px 5px 2px rgba(150, 150, 150, 0.9);
+    /* box-shadow: -1px -1px 1px 1px rgba(0, 0, 0, 0.9); */
+    
+}
+
+.form input::placeholder{
+    font-size: 0.9rem;
+    color: grey;
+    font-style: italic;
+    font-family: fontawesome;
+    
+}
+
+.form input#promo::placeholder{
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+    /* margin-left: 90%; */
+
+}
+
+.form .search-flights{
+    width: 30%;
+    background-color: #04AA6d;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 7px;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    flex: 1;
+}
+
+.form button:hover{
+    cursor: pointer;
+    background-color: #038555;
+}
+
+.our_destinations{
+    margin-top: 8rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    overflow: auto;
+}
+
+
+.our_destinations h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: dodgerblue;
+}
+
+.our_destinations p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: #ddd000;
+}
+
+.our_destinations .hl{
+    margin-top: 1.3rem;
+    width: 90vw;
+    height: 1px;
+    background-color:rgb(100, 100, 100);
+}
+
+.destination a{
+    text-decoration: none;
+}
+.our_destinations .destination{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100vw;
+    margin-top: 2rem;
+
+}
+
+
+.desti1, .desti2, .desti3, .desti4{
+    height: 300px;
+    width: 300px;
+    /* background-size: cover; */
+    /* text-align: center; */
+} 
+
+.desti1 img, .desti2 img, .desti3 img, .desti4 img{
+    height: 250px;
+    width: 100%
+
+}
+
+.desti1 p, .desti2 p, .desti3 p, .desti4 p{
+    margin-top: 8px;
+    font-size: 1.3rem;
+    color: black;
+    display: inline-block;
+
+}
+
+.desti1 img:hover, .desti2 img:hover, .desti3 img:hover, .desti4 img:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+.desti1 p:hover, .desti2 p:hover, .desti3 p:hover, .desti4 p:hover{
+    color: dodgerblue;
+    
+}
+
+
+
+
+
+.our_blogs{
+    width: 100vw;
+    background-color: #effeff;
+    margin: 30px 0;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+
+.our_blogs .blog_header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.our_blogs .blog_header h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: dodgerblue;
+}
+
+.our_blogs .blog_header p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: #ddd000;
+}
+.our_blogs .blogs{
+    margin-top: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px 30px;
+}
+
+.our_blogs .blogs .blog{
+    height: 380px;
+    width: 350px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 6px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    box-shadow: -5px -4px 10px 1px rgb(255, 255, 255), 5px 4px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.our_blogs .blogs .blog:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.our_blogs .blogs .blog img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.our_blogs .blogs .blog h3{
+    margin-top: 5px;
+    font-size: 1.4rem;
+    color: yellow;
+    font-family: 'Merriweather', serif;
+
+}
+
+.our_blogs .blogs .blog h6{
+    font-family: 'Merriweather', serif;
+}
+.our_blogs .blogs .blog p{
+    margin: 20px 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-family: 'ubuntu';
+    color: white;
+}
+
+.our_blogs .blogs .blog button{
+    width: 30%;
+    height: 30px;
+    padding: 3px 5px;
+    border: none;
+    background-color: yellow;
+    color: dodgerblue;
+    font-family: 'ubuntu';
+    border-radius: 3px;
+
+}
+
+.our_blogs .blogs .blog button:hover{
+    box-shadow: 0 0 10px 1px rgba(10, 10, 10, 0.7);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 4%;
+    width: 100vw;
+    height: 8vh;
+    background-color: #228be6;
+    display: flex;
+    align-items: center;
+
+}
+
+footer p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: yellow;
+    margin-left: 8%;
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .desti4{
+        display: none;
+    }
+    
+}
+
+@media  screen and (max-width: 1130px) {
+    .our_blogs .blogs{
+        flex-flow: column wrap;
+    }
+
+    .our_blogs .blogs .blog {
+        margin-bottom: 30px;
+    }
+}

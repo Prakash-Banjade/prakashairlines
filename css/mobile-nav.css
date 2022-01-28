@@ -1,0 +1,46 @@
+.mobile-nav{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    position: fixed;
+    background-color: rgba(0,0,0, 0.9);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    left: -110%;
+    transition: 0.3s ease;
+}
+
+
+.mobile-nav ul li{
+    list-style-type: none;
+    /* display: inline-block; */
+    margin: 40px 0px;
+}
+
+.mobile-nav ul li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #818181;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mobile-nav ul li a:hover{
+    color: #f1f1f1;
+    transition: 0.3s ease;
+}
+
+.mobile-nav i#cross{
+    font-size: 2rem;
+    color: #f1f1f1;
+    position: absolute;
+    top: 6vh;
+    left: 90vw;
+    cursor: pointer;
+}
+
+

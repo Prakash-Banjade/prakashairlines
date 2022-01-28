@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Airlines</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css/airlines.css">
+    <link rel="stylesheet" media="screen and (max-width: 1075px)" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile-nav.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e5dc0c1e60.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="ads">
+        <div class="ad">
+            <div class="ad1">
+                <h1>HURRY UP!</h1>
+            </div>
+            <div class="ad2">
+                <p>Get 10% cashback by booking <br> from
+                    <span style="cursor: pointer;">Prakash Airlines app</span>
+                </p>
+                <div class="app">
+                    <img src="electronics.png" alt="">
+                    <button>Get Now !</button>
+                </div>
+            </div>
+            <img class="airplane" src="airplane.png" alt="">
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="first_nav">
+            <li><a href="#" onclick="closeNav()">Home <i class="fas fa-home"></i></a></li>
+            <li><a href="#" onclick="closeNav()">Nearest Airport <i class="fas fa-plane-departure"></i></a></li>
+            <li><a href="#" onclick="closeNav()">About Us <i class="fas fa-users"></i></a></li>
+            <li><a href="#" onclick="closeNav()">Contact Us</a></li>
+            <li><a href="#" onclick="closeNav()" style="border: 2px solid #818181; padding: 5px 8px;">Sign Up</a></li>
+        </ul>
+
+        <ul class="second_nav">
+            <li><a href="#" onclick="closeNav()">Ticket <i class="fas fa-calendar-check"></i></a></li>
+            <li><a href="#" onclick="closeNav()">Flight Info <i class="fas fa-plane"></i></a></li>
+            <li><a href="#" onclick="closeNav()">Web Check-In <i class="fas fa-check-double"></i></a></li>
+            <li><a href="#" onclick="closeNav()">Hotel <i class="fas fa-hotel"></i></a></li>
+            <li><a href="#" onclick="closeNav()">Travel <i class="fas fa-route"></i></a></li>
+            <li><a href="#" onclick="closeNav()" style="border: 2px solid #818181; padding: 5px 8px;">Log In</i></a></li>
+        </ul>
+        <i class="far fa-times-circle" id="cross" onclick="closeNav()"></i>
+    </div>
+
+    <nav id="navbar">
+        
+        
+        <div class="logo">
+            <span class="Prakash">Prakash</span><span class="Airlines">Airlines</span>
+
+            <ul class="secondary_tab">
+                <li>
+                    <button class="signup"><a href="#">Sign Up</a></button>
+                    <button class="login"><a href="#">Log In</a></button>
+                </li>
+            </ul>
+
+            <i class="fas fa-bars" id="menu_toggle" onclick="openNav()"></i>
+        </div>
+
+        <div class="elements">
+            <ul class="main_tab">
+                <li><a href="#" class="active">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="#">Nearest Airport <i class="fas fa-plane-departure"></i></a></li>
+                <li><a href="#">About Us <i class="fas fa-users"></i></a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <nav class="lower-nav" id="lower-nav">
+            <ul>
+                <li><a href="#">Ticket Status <i class="fas fa-calendar-check"></i></a></li>
+                <li><a href="#">Flght Info <i class="fas fa-plane"></i></a></li>
+                <li><a href="#">Web Check-In <i class="fas fa-check-double"></i></a></li>
+                <li><a href="#">Hotel <i class="fas fa-hotel"></i></a></li>
+                <li><a href="#">Travel <i class="fas fa-route"></i></a></li>
+                <li class="signIn">
+                    <div class="dropdown_btn">
+                        <button class="dropdown" onclick="dropdown()"><i class="fas fa-chevron-circle-down"></i></button>
+                    </div>
+                    <div class="signIn_btn" id="signIn_btn">
+                        <button class="signup"><a href="#">Sign Up</a></button>
+                        <button class="login"><a href="#">Log In</a></button>
+                    </div>
+
+                </li>
+                <!-- <li id="partners" class="partners">
+                    <button class="payment">Payment partners   &nbsp;&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+                    <ul class="partners-content">
+                        <li>Khalti</li>
+                        <li>IME pay</li>
+                        <li>VISA</li>
+                        <li><span style="color: green;">e</span>Sewa</li></div>
+                    </ul>
+                </li> -->
+            </ul>
+        </nav>
+    </nav>
+
+    <div class="bodysec">
+        <div class="bodypart">
+            <div class="quote">
+                <h1>We wish you get <br> what you want</h1>
+                <h2>Make yourself at Home</h2>
+            </div>
+            <div class="hrow"></div>
+            <div class="form">
+                <div class="form_container">
+
+                    <div class="form1" action="index.html">
+
+                        <h3>From:</h3>
+                        <input type="text" placeholder="Eg. Kathmandu">
+
+                        <h3>To:</h3>
+                        <input type="text" placeholder="Eg. Pokhara">
+                        <h3>Departure date:</h3>
+                        <input type="text" placeholder="Date">
+                        <h3>No. of Travellers</h3>
+                        <input type="number" placeholder="1 Traveller">
+
+
+                    </div>
+
+                    <div action="index.html" class="form2">
+                        <h3>Nationality</h3>
+                        <input type="text" name="nationality" id="" placeholder="Nepalese">
+                        <h3>Adult</h3>
+                        <input type="number" name="nationality" id="" placeholder="1">
+                        <h3>Child</h3>
+                        <input type="number" name="nationality" id="" placeholder="None">
+                        <h3>Promo</h3>
+                        <input type="text" name="nationality" id="promo" placeholder="&#xf61f;">
+                    </div>
+                </div>
+                <button class="search-flights">Search Flight</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="our_destinations">
+        <h2>Explore our destinations</h2>
+        <p>Be better connected with <span style="color:#148b60; font-weight: bold;">Prakash Airlines</span> acorss the
+            world</p>
+        <div class="hl"></div>
+
+        <div class="destination">
+            <a href="#">
+                <div class="desti1">
+                    <img src="destinations/dubai.png" alt="index.html">
+                    <p>Dubai</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="desti2">
+                    <img src="destinations/qatar.png" alt="index.html">
+                    <p>Qatar</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="desti3">
+                    <img src="destinations/kuwait.png" alt="index.html">
+                    <p>Kuwait</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="desti4">
+                    <img src="destinations/saudi.png" alt="index.html">
+                    <p>Saudi Arabia</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="our_blogs">
+        <div class="blog_header">
+            <h1>Our blog and articles</h1>
+            <p>Get yourself update with us and explore the current happenings</p>
+        </div>
+
+        <!-- <div class="hl"></div> -->
+
+        <div class="blogs">
+            <div class="blog">
+                <img src="blogs/mobile app.png" alt="">
+                <h3>Prakash Airlines Mobile App</h3>
+                <h6 style="cursor: pointer;">Download now</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sed itaque cumque? Lorem.</p>
+               <button>Explore..</button>
+            </div>
+            
+            <div class="blog blogs2">
+                <img src="blogs/dxb.png" alt="">
+                <h3>Dubai International Airport</h3>
+                <h6>Dubai</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam ut ex sapiente.</p>
+               <button>Explore..</button>
+              
+            </div>
+
+            <div class="blog blogs2">
+                <img src="blogs/kaia.png" alt="">
+                <h3 style="font-size: 1.2rem;">King Abdulaziz International Airport</h3>
+                <h6>Saudi Arabia</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero qui ad adipisci iure?.......</p>
+                <button>Explore..</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>Prakash Airlines <span><a style="text-decoration: none; color: white;" href="">&copy;-2022</a></span></p>
+    </footer>
+</body>
+<script src="js/airlines.js"></script>
+
+</html>

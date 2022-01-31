@@ -162,6 +162,16 @@ nav#navbar .logo{
     html{
         font-size: 10px;
     }
+
+    .our_blogs .blogs .blog{
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .our_blogs .blogs .blog{
+        width: 290px;
+    }
 }
 
 @media screen and (max-width: 380px){

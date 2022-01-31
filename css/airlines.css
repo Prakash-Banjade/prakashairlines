@@ -148,12 +148,17 @@ nav .logo{
     font-size: 2rem;
 }
 
+nav .elements{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
 nav .elements ul.main_tab{
     list-style: none;
     /* width: 100vw; */
-    margin: 15px 5px;
+    /* margin: 15px 5px; */
     margin-left: 10rem;
-    line-height: 8vh;
+    /* line-height: 8vh; */
 
 }
 
@@ -318,7 +323,8 @@ ul.secondary_tab li button.login:hover{
     flex-flow: row wrap;
     width: 100vw;
     border-bottom: 2px solid yellow;
-    height: 8vh;
+    height: 4rem;
+
 }
 
 
@@ -658,8 +664,8 @@ li.signIn button.login:hover{
 }
 
 .our_blogs .blogs .blog{
-    height: 380px;
     width: 350px;
+    height: 400px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -760,5 +766,6 @@ footer p{
 
     .our_blogs .blogs .blog {
         margin-bottom: 30px;
+        padding-bottom: 5px;
     }
 }
